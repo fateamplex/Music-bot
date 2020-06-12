@@ -16,7 +16,7 @@ client.on("ready", () => {
 
 });
 
-client.login(settings.token_bot); //The bot connects thanks to the token
+client.login(process.env.TOKEN); //The bot connects thanks to the token
 
 client.on('message', async (message) => {
 
